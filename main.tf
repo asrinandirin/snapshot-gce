@@ -1,5 +1,5 @@
 locals {
-    timestamp = "${timestamp()}"
+    timestamp = timestamp()
     current_day = formatdate("YYYY-MM-DD", local.timestamp)
 }
 
