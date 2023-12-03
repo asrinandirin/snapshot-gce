@@ -13,5 +13,4 @@ resource "google_compute_snapshot" "snapshot" {
   name        = "${data.google_compute_disk.persistent_boot_disk.name}-${local.current_day}"
   source_disk = data.google_compute_disk.persistent_boot_disk.self_link
   zone = data.google_compute_disk.persistent_boot_disk.zone
-  project = data.google_compute_disk.persistent_boot_disk.project
 }
